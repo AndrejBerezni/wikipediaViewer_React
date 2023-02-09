@@ -34,6 +34,7 @@ body {
   right: 2%;
   text-shadow: 0px 0px 1px black;
   color: var(--dblue);
+  font-size: 12px;
 }
 
 #link a{
@@ -50,9 +51,7 @@ body {
   text-decoration: underline;
 }
 
-button {
-  border: none;
-}
+
 .button {
   background: var(--dblue);
   margin : 20px auto;
@@ -97,8 +96,9 @@ button {
 }
 
 #form-button {
+  border: none;
   font-size: large;
-  padding-bottom:55px;
+  padding-bottom: 58px;
 }
 #search-form {
   display: flex;
@@ -135,7 +135,7 @@ button {
 
 .result-link:hover:after {
   font-family: "Font Awesome 5 Free";
-  content: '\f060  go to page';
+  content: '\f060';
   font-size: 0.8em;
   margin-left: 10px;
 
@@ -145,10 +145,11 @@ button {
 .result-link {
   text-decoration: none;
   color: var(--blue);
+  transition: .5s;
   
 }
 
-.result-link:hover {
+.result-link:hover, .result h3:hover {
   color: var(--dblue);
 }
 

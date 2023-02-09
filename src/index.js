@@ -33,16 +33,12 @@ function App() {
     setSearchTerm(event.target.elements.search.value);
   }
 
-  function handleRandomArticle() {
-    window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank');
-  }
-
   return (
     <div id='app'>
-      <div className="button" onClick={handleRandomArticle}>
+      <div className="button" onClick={() => window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank')}>
         <p className="btnText">Read random article</p>
         <div className="btnTwo">
-          <p className="btnText2"><i class="fas fa-search"></i></p>
+          <p className="btnText2"><i className="fas fa-search"></i></p>
         </div>
       </div>
       <form id='search-form' onSubmit={handleSubmit}>
@@ -50,7 +46,7 @@ function App() {
         <button className="button" id='form-button' type='submit' >
           <p className="btnText">Search</p>
           <div className="btnTwo">
-            <p className="btnText2"><i class="fas fa-search"></i></p>
+            <i className="fas fa-search btnText2"></i>
           </div>
         </button>
       </form>
