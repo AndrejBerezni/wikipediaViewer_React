@@ -12,7 +12,7 @@ function App() {
           <p className="btnText2"><i class="fas fa-search"></i></p>
         </div>
       </div>
-      <form id='search-form' href>
+      <form id='search-form' href=''>
         <input id='input' type='text' name='search' placeholder='Type your search here...'/>
         <div className="button" id='form-button'>
           <p className="btnText">Search</p>
